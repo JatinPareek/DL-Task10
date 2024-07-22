@@ -15,7 +15,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function Component() {
   return (
-    <div className="bg-[#4F2B6B] text-white mt-36 w-full flex flex-col pb-8">
+    <div className="bg-[#4F2B6B] text-white mt-36 w-full flex flex-col pb-8 px-8">
       <div className="flex flex-row gap-8 items-end -mt-36 w-full overflow-hidden">
         <div className="bg-[#D9539C] -ml-40 rounded-xl w-72 h-64 shrink-0"></div>
         <div className="bg-[#D9539C] rounded-xl w-72 h-48 shrink-0"></div>
@@ -49,7 +49,7 @@ export default function Component() {
         </div>
       </div>
       <div>
-        <div className="container flex gap-24 mx-auto">
+        <div className="container   flex gap-24 mx-auto">
           <ul className="space-y-2 flex flex-col gap-2">
             <li>
               <a href="#" className="text-sm hover:text-gray-300">
