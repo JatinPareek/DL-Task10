@@ -7,6 +7,7 @@ import {
 } from "react-icons/ai";
 import { FaPuzzlePiece } from "react-icons/fa";
 import HeaderLogo from "../assets/Header-Logo.png";
+import { Link } from "react-router-dom";
 
 function Component() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,16 +16,19 @@ function Component() {
     <div className="w-full h-full flex flex-col text-center bg-[#FAF2FF]">
       <header className="flex items-center justify-between pt-12 px-12 w-full ">
         <div className="flex items-center gap-4">
-          <img src={HeaderLogo} alt="Logo" className="h-[120px] w-[120px]" />
+          <Link to="/">
+            <img src={HeaderLogo} alt="Logo" className="h-[120px] w-[120px]" />
+          </Link>
         </div>
+
         <nav
           className={`md:flex gap-6 justify-evenly flex-1 text-lg ${
             menuOpen ? "block" : "hidden"
           }`}
         >
-          <a href="#" className="text-gray-700">
+          <Link to="/" className="text-gray-700">
             Home
-          </a>
+          </Link>
           <a href="#" className="text-gray-700">
             About
           </a>
@@ -34,9 +38,9 @@ function Component() {
           <a href="#" className="text-gray-700">
             Play
           </a>
-          <a href="#" className="text-gray-700">
+          <Link to="/explore" className="text-gray-700">
             Explore
-          </a>
+          </Link>
           <a href="#" className="text-gray-700">
             Contact
           </a>
